@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "blocks";
+  src: url(./policy/baby\ blocks.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  background: url(./DoubleEcran.jpg) center/cover;
+  /* position: relative; */
+}
+h1 {
+  position: relative;
+  color: #f51720;
+  font-size: 5rem;
+  margin: 0;
+  line-height: 10rem;
+  text-transform: uppercase;
+  font-family: "blocks", serif, sans-serif;
+  filter: hue-rotate(0deg);
+  animation: lettersColorsAnimation linear 10s;
+  animation-iteration-count: infinite;
+}
+#letter1,
+#letter2,
+#letter3,
+#letter4,
+#letter5,
+#letter6,
+#letter7,
+#letter8 {
+  animation: lettersAnimation ease 1s;
+  animation-iteration-count: 1;
+  position: absolute;
+  animation-fill-mode: both;
+}
+#letter1 {
+  left: 10vw;
+}
+#letter2 {
+  animation-delay: 0.5s;
+  left: 20vw;
+}
+#letter3 {
+  animation-delay: 1s;
+  left: 30vw;
+}
+#letter4 {
+  animation-delay: 1.5s;
+  left: 40vw;
+}
+#letter5 {
+  animation-delay: 2s;
+  left: 50vw;
+}
+#letter6 {
+  animation-delay: 2.5s;
+  left: 60vw;
+}
+#letter7 {
+  animation-delay: 3s;
+  left: 70vw;
+}
+#letter8 {
+  animation-delay: 3.5s;
+  left: 80vw;
+}
+
+#status {
+  animation: statusColorsAnimation 10s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin: auto 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 4s;
+}
+
+@keyframes lettersAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-1500px, 0px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(30px, 0px);
+  }
+  80% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes lettersColorsAnimation {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes statusColorsAnimation {
+  100% {
+    filter: hue-rotate(-360deg);
+  }
+}
