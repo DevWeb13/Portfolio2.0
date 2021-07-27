@@ -1,0 +1,102 @@
+@import "./utils/keyframes";
+@import "./utils/policy";
+@import "./utils/variables";
+body {
+  margin: 0;
+}
+/* *********************** HEADER *********************** */
+header {
+  height: 100vh;
+  background: url(./DoubleEcran.jpg) center/cover;
+  h1 {
+    //position: relative;
+    color: $primaryColor;
+    font-size: 5.5rem;
+    margin: 0;
+    line-height: 7rem;
+    //text-transform: uppercase;
+    font-family: "blocks", serif, sans-serif;
+    filter: hue-rotate(0deg);
+    animation: lettersColorsAnimation linear 10s;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 2px 2px $fourthColor;
+    #letter1,
+    #letter2,
+    #letter3,
+    #letter4,
+    #letter5,
+    #letter6,
+    #letter7,
+    #letter8 {
+      animation: lettersAnimation ease 1s;
+      animation-iteration-count: 1;
+      position: absolute;
+      animation-fill-mode: both;
+    }
+    #letter1 {
+      left: 10vw;
+    }
+
+    #letter2 {
+      animation-delay: 0.5s;
+      left: 20vw;
+    }
+    #letter3 {
+      animation-delay: 1s;
+      left: 30vw;
+    }
+    #letter4 {
+      animation-delay: 1.5s;
+      left: 40vw;
+    }
+    #letter5 {
+      animation-delay: 2s;
+      left: 50vw;
+    }
+    #letter6 {
+      animation-delay: 2.5s;
+      left: 60vw;
+    }
+    #letter7 {
+      animation-delay: 3s;
+      left: 70vw;
+    }
+    #letter8 {
+      animation-delay: 3.5s;
+      left: 80vw;
+    }
+
+    #status {
+      position: absolute;
+      font-family: "advanced", serif, sans-serif;
+      animation: statusColorsAnimation 10s;
+      animation-iteration-count: infinite;
+
+      margin: 125px 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: 4s;
+      color: $fourthColor;
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-shadow: 4px 4px 4px $primaryColor;
+    }
+    #vitrine {
+      position: absolute;
+      //text-align: justify;
+      transition: 1s;
+      transform: translateX(-50%);
+      color: white;
+      font-family: "alagard", serif, sans-serif;
+      margin: 275px 50%;
+      width: max-content;
+
+      color: $secondaryColor;
+      text-shadow: 4px 4px 4px $thirdColor;
+      opacity: 0;
+      animation: vitrineAnimation ease 1s;
+      animation-delay: 7s;
+      animation-fill-mode: both;
+    }
+  }
+}

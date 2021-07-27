@@ -1,0 +1,19 @@
+{
+  "name": "portfolio2.0",
+  "version": "1.0.0",
+  "description": "Portfolio DevWeb13",
+  "main": "main.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevWeb13/Portfolio2.0.git"
+  },
+  "author": "DevWeb13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevWeb13/Portfolio2.0/issues"
+  },
+  "homepage": "https://github.com/DevWeb13/Portfolio2.0#readme"
+}
