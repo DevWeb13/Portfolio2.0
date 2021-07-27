@@ -1,84 +1,4 @@
-@font-face {
-  font-family: "blocks";
-  src: url(./policy/baby\ blocks.ttf);
-}
-
-body {
-  margin: 0;
-}
-
-header {
-  height: 100vh;
-  background: url(./DoubleEcran.jpg) center/cover;
-  /* position: relative; */
-}
-h1 {
-  position: relative;
-  color: #f51720;
-  font-size: 5rem;
-  margin: 0;
-  line-height: 10rem;
-  text-transform: uppercase;
-  font-family: "blocks", serif, sans-serif;
-  filter: hue-rotate(0deg);
-  animation: lettersColorsAnimation linear 10s;
-  animation-iteration-count: infinite;
-}
-#letter1,
-#letter2,
-#letter3,
-#letter4,
-#letter5,
-#letter6,
-#letter7,
-#letter8 {
-  animation: lettersAnimation ease 1s;
-  animation-iteration-count: 1;
-  position: absolute;
-  animation-fill-mode: both;
-}
-#letter1 {
-  left: 10vw;
-}
-#letter2 {
-  animation-delay: 0.5s;
-  left: 20vw;
-}
-#letter3 {
-  animation-delay: 1s;
-  left: 30vw;
-}
-#letter4 {
-  animation-delay: 1.5s;
-  left: 40vw;
-}
-#letter5 {
-  animation-delay: 2s;
-  left: 50vw;
-}
-#letter6 {
-  animation-delay: 2.5s;
-  left: 60vw;
-}
-#letter7 {
-  animation-delay: 3s;
-  left: 70vw;
-}
-#letter8 {
-  animation-delay: 3.5s;
-  left: 80vw;
-}
-
-#status {
-  animation: statusColorsAnimation 10s;
-  animation-iteration-count: infinite;
-  position: absolute;
-  margin: auto 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: 4s;
-}
-
+/* ****************** HEADER ******************** */
 @keyframes lettersAnimation {
   0% {
     opacity: 0;
@@ -96,15 +16,137 @@ h1 {
     transform: translate(0px, 0px);
   }
 }
-
 @keyframes lettersColorsAnimation {
   100% {
     filter: hue-rotate(360deg);
   }
 }
-
 @keyframes statusColorsAnimation {
   100% {
     filter: hue-rotate(-360deg);
   }
 }
+@keyframes vitrineAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 1500px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-50%, -30px);
+  }
+  80% {
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0px);
+  }
+}
+@font-face {
+  font-family: "blocks";
+  src: url("../policy/baby blocks.ttf");
+}
+@font-face {
+  font-family: "alagard";
+  src: url("../policy/alagard.ttf");
+}
+@font-face {
+  font-family: "advanced";
+  src: url("../../policy/advanced_pixel_lcd-7.ttf");
+}
+body {
+  margin: 0;
+}
+
+/* *********************** HEADER *********************** */
+header {
+  height: 100vh;
+  background: url(./DoubleEcran.jpg) center/cover;
+}
+header h1 {
+  color: #f51720;
+  font-size: 5.5rem;
+  margin: 0;
+  line-height: 7rem;
+  font-family: "blocks", serif, sans-serif;
+  filter: hue-rotate(0deg);
+  animation: lettersColorsAnimation linear 10s;
+  animation-iteration-count: infinite;
+  text-shadow: 2px 2px 2px #2ff3e0;
+}
+header h1 #letter1,
+header h1 #letter2,
+header h1 #letter3,
+header h1 #letter4,
+header h1 #letter5,
+header h1 #letter6,
+header h1 #letter7,
+header h1 #letter8 {
+  animation: lettersAnimation ease 1s;
+  animation-iteration-count: 1;
+  position: absolute;
+  animation-fill-mode: both;
+}
+header h1 #letter1 {
+  left: 10vw;
+}
+header h1 #letter2 {
+  animation-delay: 0.5s;
+  left: 20vw;
+}
+header h1 #letter3 {
+  animation-delay: 1s;
+  left: 30vw;
+}
+header h1 #letter4 {
+  animation-delay: 1.5s;
+  left: 40vw;
+}
+header h1 #letter5 {
+  animation-delay: 2s;
+  left: 50vw;
+}
+header h1 #letter6 {
+  animation-delay: 2.5s;
+  left: 60vw;
+}
+header h1 #letter7 {
+  animation-delay: 3s;
+  left: 70vw;
+}
+header h1 #letter8 {
+  animation-delay: 3.5s;
+  left: 80vw;
+}
+header h1 #status {
+  position: absolute;
+  font-family: "advanced", serif, sans-serif;
+  animation: statusColorsAnimation 10s;
+  animation-iteration-count: infinite;
+  margin: 125px 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 4s;
+  color: #2ff3e0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: 4px 4px 4px #f51720;
+}
+header h1 #vitrine {
+  position: absolute;
+  transition: 1s;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "alagard", serif, sans-serif;
+  margin: 275px 50%;
+  width: max-content;
+  color: #fa26a0;
+  text-shadow: 4px 4px 4px #f8d210;
+  opacity: 0;
+  animation: vitrineAnimation ease 1s;
+  animation-delay: 7s;
+  animation-fill-mode: both;
+}
+
+/*# sourceMappingURL=style.css.map */
