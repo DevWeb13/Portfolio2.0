@@ -124,10 +124,9 @@ header h1 #status {
   font-family: "advanced", serif, sans-serif;
   animation: statusColorsAnimation 10s;
   animation-iteration-count: infinite;
-  margin: 125px 50%;
+  margin: 75px 50%;
   transform: translateX(-50%);
-  opacity: 0;
-  transition: 4s;
+  opacity: 1;
   color: #2ff3e0;
   text-transform: uppercase;
   font-size: 3rem;
@@ -139,10 +138,11 @@ header h1 #vitrine {
   transform: translateX(-50%);
   color: white;
   font-family: "alagard", serif, sans-serif;
-  margin: 275px 50%;
+  margin: 300px 50%;
+  font-size: 2.5rem;
   width: max-content;
   color: #fa26a0;
-  text-shadow: 4px 4px 4px #f8d210;
+  text-shadow: 2px 2px 2px #f8d210;
   opacity: 0;
   animation: vitrineAnimation ease 1s;
   animation-delay: 7s;

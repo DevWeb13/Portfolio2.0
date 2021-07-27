@@ -72,10 +72,10 @@ header {
       animation: statusColorsAnimation 10s;
       animation-iteration-count: infinite;
 
-      margin: 125px 50%;
+      margin: 75px 50%;
       transform: translateX(-50%);
-      opacity: 0;
-      transition: 4s;
+      opacity: 1;
+      //transition: 4s;
       color: $fourthColor;
       text-transform: uppercase;
       font-size: 3rem;
@@ -88,11 +88,12 @@ header {
       transform: translateX(-50%);
       color: white;
       font-family: "alagard", serif, sans-serif;
-      margin: 275px 50%;
+      margin: 300px 50%;
+      font-size: 2.5rem;
       width: max-content;
 
       color: $secondaryColor;
-      text-shadow: 4px 4px 4px $thirdColor;
+      text-shadow: 2px 2px 2px $thirdColor;
       opacity: 0;
       animation: vitrineAnimation ease 1s;
       animation-delay: 7s;
